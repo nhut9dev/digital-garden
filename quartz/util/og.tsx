@@ -362,7 +362,7 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
                 display: "flex",
                 padding: "0.5rem 1rem",
                 backgroundColor: cfg.theme.colors[colorScheme].highlight,
-                color: cfg.theme.colors[colorScheme].secondary,
+                color: cfg.theme.colors[colorScheme].primary,
                 borderRadius: "10px",
                 fontSize: 24,
               }}

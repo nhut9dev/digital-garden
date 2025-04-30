@@ -14,6 +14,7 @@ type FlexConfig = {
   direction?: "row" | "row-reverse" | "column" | "column-reverse"
   wrap?: "nowrap" | "wrap" | "wrap-reverse"
   gap?: string
+  width?: string
 }
 
 export default ((config: FlexConfig) => {
@@ -21,9 +22,12 @@ export default ((config: FlexConfig) => {
     const direction = config.direction ?? "row"
     const wrap = config.wrap ?? "nowrap"
     const gap = config.gap ?? "1rem"
+    const width = config.width ?? "auto"
 
     return (
-      <div style={`display: flex; flex-direction: ${direction}; flex-wrap: ${wrap}; gap: ${gap};`}>
+      <div
+        style={`display: flex; flex-direction: ${direction}; flex-wrap: ${wrap}; gap: ${gap}; width: ${width}`}
+      >
         {config.components.map((c) => {
           const grow = c.grow ? 1 : 0
           const shrink = (c.shrink ?? true) ? 1 : 0

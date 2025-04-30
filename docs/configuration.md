@@ -53,7 +53,7 @@ This part of the configuration concerns anything that can affect the whole site.
     - `gray`: graph links, heavier borders
     - `darkgray`: body text
     - `dark`: header text and icons
-    - `secondary`: link colour, current [[graph view|graph]] node
+    - `primary`: link colour, current [[graph view|graph]] node
     - `tertiary`: hover states and visited [[graph view|graph]] nodes
     - `highlight`: internal link background, highlighted text, [[syntax highlighting|highlighted lines of code]]
     - `textHighlight`: markdown highlighted text background

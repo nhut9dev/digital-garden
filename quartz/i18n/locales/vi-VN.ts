@@ -30,7 +30,7 @@ export default {
       darkMode: "Tối",
     },
     explorer: {
-      title: "Trong bài này",
+      title: "Danh mục",
     },
     footer: {
       createdWith: "Được tạo bởi",
@@ -54,7 +54,7 @@ export default {
       title: "Bảng Nội Dung",
     },
     contentMeta: {
-      readingTime: ({ minutes }) => `đọc ${minutes} phút`,
+      readingTime: ({ minutes }) => `${minutes} phút đọc`,
     },
   },
   pages: {
@@ -73,12 +73,12 @@ export default {
         count === 1 ? "1 mục trong thư mục này." : `${count} mục trong thư mục này.`,
     },
     tagContent: {
-      tag: "Thẻ",
-      tagIndex: "Thẻ Mục Lục",
+      tag: "Tag",
+      tagIndex: "Tag Mục Lục",
       itemsUnderTag: ({ count }) =>
-        count === 1 ? "1 mục gắn thẻ này." : `${count} mục gắn thẻ này.`,
-      showingFirst: ({ count }) => `Hiển thị trước ${count} thẻ.`,
-      totalTags: ({ count }) => `Tìm thấy ${count} thẻ tổng cộng.`,
+        count === 1 ? "1 mục gắn tag này." : `${count} mục gắn tag này.`,
+      showingFirst: ({ count }) => `Hiển thị trước ${count} tag.`,
+      totalTags: ({ count }) => `Tìm thấy ${count} tag.`,
     },
   },
 } as const satisfies Translation

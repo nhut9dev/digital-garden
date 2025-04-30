@@ -176,7 +176,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
 
   // precompute style prop strings as pixi doesn't support css variables
   const cssVars = [
-    "--secondary",
+    "--primary",
     "--tertiary",
     "--gray",
     "--light",
@@ -197,7 +197,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   const color = (d: NodeData) => {
     const isCurrent = d.id === slug
     if (isCurrent) {
-      return computedStyleMap["--secondary"]
+      return computedStyleMap["--primary"]
     } else if (visited.has(d.id) || d.id.startsWith("tags/")) {
       return computedStyleMap["--tertiary"]
     } else {
