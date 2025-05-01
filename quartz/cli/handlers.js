@@ -209,7 +209,7 @@ See the [documentation](https://quartz.jzhao.xyz) for how to get started.
 
   // setup remote
   execSync(
-    `git remote show upstream || git remote add upstream https://github.com/jackyzha0/quartz.git`,
+    `git remote show upstream || git remote add upstream https://github.com/nhut9dev/digital-garden.git`,
     { stdio: "ignore" },
   )
 
@@ -480,7 +480,7 @@ export async function handleUpdate(argv) {
   console.log(chalk.bgGreen.black(`\n Quartz v${version} \n`))
   console.log("Backing up your content")
   execSync(
-    `git remote show upstream || git remote add upstream https://github.com/jackyzha0/quartz.git`,
+    `git remote show upstream || git remote add upstream https://github.com/nhut9dev/digital-garden.git`,
   )
   await stashContentFolder(contentFolder)
   console.log(
