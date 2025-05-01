@@ -252,7 +252,7 @@ export function renderPage(
                   ))}
                 </div>
               </div>
-              {slug === "index" ? <Home /> : <Content {...componentData} />}
+              {slug === "index" ? <Home {...componentData} /> : <Content {...componentData} />}
               <hr />
               <div class="page-footer">
                 {afterBody.map((BodyComponent) => (

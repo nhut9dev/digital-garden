@@ -1,4 +1,6 @@
 export interface ColorScheme {
+  background: string
+  backgroundgray: string
   light: string
   lightgray: string
   gray: string
@@ -136,6 +138,8 @@ export function joinStyles(theme: Theme, ...stylesheet: string[]) {
 ${stylesheet.join("\n\n")}
 
 :root {
+  --background: ${theme.colors.lightMode.background};
+  --backgroundgray: ${theme.colors.lightMode.backgroundgray};
   --light: ${theme.colors.lightMode.light};
   --lightgray: ${theme.colors.lightMode.lightgray};
   --gray: ${theme.colors.lightMode.gray};
@@ -153,6 +157,8 @@ ${stylesheet.join("\n\n")}
 }
 
 :root[saved-theme="dark"] {
+  --background: ${theme.colors.darkMode.background};
+  --backgroundgray: ${theme.colors.darkMode.backgroundgray};
   --light: ${theme.colors.darkMode.light};
   --lightgray: ${theme.colors.darkMode.lightgray};
   --gray: ${theme.colors.darkMode.gray};

@@ -1,14 +1,10 @@
 ---
-title: Lời nói đầu
+title: Digital Garden
 tags:
 ---
-
-> [!warning] Xin chào. Đây là [digital garden](https://jzhao.xyz/posts/networked-thought#what-is-digital-gardening) cá nhân.
-> Mọi thông tin ở đây chỉ mang tính cá nhân, không nhằm mục đích cung cấp thông tin, kiến thức một cách chính xác.
-> 
-> Vui lòng chọn lọc thông tin.
-> 
-> Xin cảm ơn.
-
-
-
+<p>
+Nơi các ghi chú, ý tưởng và sự hiểu biết của tôi được kết nối và mang tính cá nhân<br />
+<strong>Ghi chú là quá trình và thông tin sẽ dần hoàn thiện theo thời gian </strong> <br />
+Do đó, tính chính xác và hoàn thiện không được đảm bảo <br />
+Vui lòng chọn lọc thông tin
+</p>

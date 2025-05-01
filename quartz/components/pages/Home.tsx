@@ -1,9 +1,10 @@
 import HeroSection from "../custom/HeroSection"
+import { QuartzComponentProps } from "../types"
 
-const Home = () => {
+const Home = (props: QuartzComponentProps) => {
   return (
     <div className="home-page">
-      <HeroSection />
+      <HeroSection {...props} />
     </div>
   )
 }

@@ -9,6 +9,7 @@ import { QuartzPluginData } from "../../plugins/vfile"
 import { ComponentChildren } from "preact"
 import { concatenateResources } from "../../util/resources"
 import { trieFromAllFiles } from "../../util/ctx"
+import Home from "./Home"
 
 interface FolderContentOptions {
   /**
@@ -88,25 +89,26 @@ export default ((opts?: Partial<FolderContentOptions>) => {
           }
         })
         .filter((page) => page !== undefined) ?? []
-    const cssClasses: string[] = fileData.frontmatter?.cssclasses ?? []
-    const classes = cssClasses.join(" ")
+    // const cssClasses: string[] = fileData.frontmatter?.cssclasses ?? []
+    // const classes = ["page-listing", ...cssClasses].join(" ")
     const listProps = {
       ...props,
       sort: options.sort,
       allFiles: allPagesInFolder,
     }
 
-    const content = (
-      (tree as Root).children.length === 0
-        ? fileData.description
-        : htmlToJsx(fileData.filePath!, tree)
-    ) as ComponentChildren
+    // const content = (
+    //   (tree as Root).children.length === 0
+    //     ? fileData.description
+    //     : htmlToJsx(fileData.filePath!, tree)
+    // ) as ComponentChildren
 
     return (
       <div class="popover-hint">
-        <article class={classes}>{content}</article>
         <div class="page-listing">
-          {options.showFolderCount && (
+          <Home {...listProps} />
+
+          {/* {options.showFolderCount && (
             <p>
               {i18n(cfg.locale).pages.folderContent.itemsUnderFolder({
                 count: allPagesInFolder.length,
@@ -114,8 +116,8 @@ export default ((opts?: Partial<FolderContentOptions>) => {
             </p>
           )}
           <div>
-            <PageList {...listProps} />
-          </div>
+          <PageList {...listProps} />
+          </div> */}
         </div>
       </div>
     )
