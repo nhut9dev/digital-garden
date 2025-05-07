@@ -2,7 +2,7 @@
 title: Tổng hợp ngắn
 draft: false
 tags:
-  - web
+  - knowledges
 ---
 
 > [!info] Đây là các ghi chép nhanh
@@ -12,6 +12,9 @@ tags:
 - Domain (Tên miền): địa chỉ của một trang web trên Internet
 - Domain (Lĩnh vực chuyên môn): là ngành nghề, lĩnh vực, hoặc loại hình kinh doanh mà ứng viên hoặc công ty hoạt động.
 	- **Fintech**, Logistics, Healthcare, SaaS,... Có các quy trình và nghiệp vụ phức tạp. Các ứng viên có kinh nghiệm sẽ dễ hiểu nghiệp vụ và ít chi phí đào tạo
+
+## DSA - Digital Signature Algorithm
+- 
 
 ## SaaS - Software as a Service
 - là một mô hình cung cấp phần mềm qua Internet, trong đó người dùng truy cập ứng dụng thông qua trình duyệt web mà không cần cài đặt hay quản lý phần mềm trên thiết bị của họ. Nhà cung cấp SaaS chịu trách nhiệm lưu trữ, bảo trì, cập nhật và bảo mật ứng dụng.

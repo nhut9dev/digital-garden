@@ -2,7 +2,7 @@
 title: Các dự án web phổ biến
 draft: false
 tags:
-  - web
+  - knowledges
 ---
 ### 1. **CMS (Content Management System) – Hệ quản trị nội dung**
 - **Mục đích**: Quản lý và xuất bản nội dung dễ dàng mà không cần code.
